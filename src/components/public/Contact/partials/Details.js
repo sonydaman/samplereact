@@ -2,7 +2,7 @@ import React from 'react';
 
 const Details = () => (
   <div>
-    <h1>Welcome to the Details Page!</h1>
+    <h4>Welcome to the Details Page!</h4>
   </div>
 )
 export default Details;

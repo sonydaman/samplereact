@@ -23,7 +23,7 @@ import { Link } from 'react-router-dom';
 const List = (props) => {
     return( 
             <div>
-                <h1>Welcome to the List Page!</h1>
+                <h4>Welcome to the List Page!</h4>
                 <Link to='/details'>Back</Link>
             </div>
         )

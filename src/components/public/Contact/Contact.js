@@ -6,7 +6,7 @@ import { Details, List  } from './partials/';
 // depending on the full pathname
 const Contact = ({ match }) => (
   <div>
-      <h2>Topics</h2>
+      <h4>Topics</h4>
       <ul>
         <li>
           <Link to={`/contact/details`}>Details</Link>
