@@ -1,22 +1,27 @@
 import React from 'react';
+const imagesData = ["http://placehold.it/900x350","http://placehold.it/900x350","http://placehold.it/900x350"]
+const SlideImages = (images) =>{
+       return images.map((data,key)=>{
+                return( 
+                        <div key={key} className={`carousel-item ${key === 0 ? 'active':''}`}>
+                            <img className="d-block img-fluid" src={data} alt={`slide-${key}`} />
+                        </div> 
+                    );
+            });
+}
+const indicators = (images) =>{
+    return images.map((data,key)=>
+                        <li key={key} data-target="#carouselExampleIndicators" className={ key === 0 ? 'active':''} data-slide-to={key}></li>
+                     );
+}
 const Slider = () => {
                     return (
                     <div id="carouselExampleIndicators" className="carousel slide my-4" data-ride="carousel">
                             <ol className="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                {indicators(imagesData)}
                             </ol>
                         <div className="carousel-inner" role="listbox">
-                            <div className="carousel-item active">
-                                <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide" />
-                            </div>
+                            {SlideImages(imagesData)}
                         </div>
                         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>

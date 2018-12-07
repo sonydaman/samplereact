@@ -1,22 +1,16 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import {LeftSection,RightSection}  from "../";
-// const checkLogin = () =>
-//   fakeAuth.isAuthenticated
-//       ? fakeAuth.GoToPrivate()
-//       : <Link to='/SignIn'>Sign</Link>
-// const Home = () => (
-//   <div>
-//     <h4>Welcome to the Website!</h4>
-//     {checkLogin()}
-//   </div>
-// )
+// import { Switch, Route  } from 'react-router-dom';
+import {LeftSection,Slider,Cardlist}  from "../";
+
 
 const Home = () =>(
   <div className="container">
     <div className="row">
       <LeftSection />
-      <RightSection />
+      <div className="col-lg-9">
+          <Slider />
+          <Cardlist />
+        </div>
     </div>
   </div>
 )
