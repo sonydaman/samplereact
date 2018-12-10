@@ -1,0 +1,26 @@
+{
+    "HOST" : "http://localhost:3000",
+    "LinkListData" :[
+                    {"URI":"/cat/1","textName":"Category 1"},
+                    {"URI":"/cat/2","textName":"Category 2"},
+                    {"URI":"/cat/3","textName":"Category 3"}
+                ],
+    "SliderData" : {
+        "images":["http://placehold.it/900x350","http://placehold.it/900x350","http://placehold.it/900x350"]
+    },
+    "CardlistData":[
+        {   "IMGURI":"http://placehold.it/700x400","INFO":"/category/info/1",
+            "TITLE":"Category 1","PR":"24.99","LINK":"/category/cat/1",
+            "DESC":"THIS IS SAMPLE TEXT 1","RATING":"2","CAT":"1"
+        },
+        {   "IMGURI":"http://placehold.it/700x400","INFO":"/category/info/2",
+            "TITLE":"Category 2","PR":"25.10","LINK":"/category/cat/2",
+            "DESC":"THIS IS SAMPLE TEXT 2","RATING":"3","CAT":"2"
+        },
+        {   "IMGURI":"http://placehold.it/700x400","INFO":"/category/info/3",
+            "TITLE":"Category 3","PR":"24.56","LINK":"/category/cat/3",
+            "DESC":"THIS IS SAMPLE TEXT 3","RATING":"5","CAT":"1"
+        }
+    ]
+        
+}

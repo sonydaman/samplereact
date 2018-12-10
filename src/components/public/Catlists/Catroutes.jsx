@@ -1,13 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import {Catlist} from '../';
-const Catroutes = ({match}) =>{
+import {Catlist,CatInfo} from '../';
+const Catroutes = ({dataLoaction}) =>{
     return(
             
                     <Switch>
                             <Route path='/category/cat/:number' component={Catlist}/>
-                            {/* <Route exact path={match.path} render={() => <h3>Please select a Link.</h3>} /> */}
+                            <Route path='/category/info/:number' component={CatInfo}/>
+                            <Route exact path={dataLoaction.match.path} render={() => <h3>Please select any category.</h3>} />
                     </Switch>
           
         );
